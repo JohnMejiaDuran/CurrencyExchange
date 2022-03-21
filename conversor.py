@@ -7,6 +7,8 @@ Choose one option
 2. COP to USD
 3. USD to MXN
 4. MXN to USD
+5. USD to ARS
+6. ARS to USD
 
 """
 
