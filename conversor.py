@@ -20,7 +20,7 @@ def converter(money,dolar):
     else:
         result=coin/dolar
         result=str(round(result,2))
-        print (f'You have {result} {money}')
+        print (f'You have {result} Dollars')
 
 option =int(input(menu))
 if option ==1:
