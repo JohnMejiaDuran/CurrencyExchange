@@ -7,8 +7,8 @@ Choose one option
 2. COP to USD
 3. USD to MXN
 4. MXN to USD
-5. USD to ARS
-6. ARS to USD
+5. CLP to USD
+6. USD to CLP
 
 """
 
@@ -33,6 +33,10 @@ elif option ==3:
     converter('Mexican pesos', 20.37)
 elif option ==4:
     converter('Mexican pesos', 20.37)
+elif option ==5:
+    converter('ARS', 20.37)
+elif option ==6:
+    converter('ARS', 20.37)
 else:
     print('Escribe una opción correcta')
 
