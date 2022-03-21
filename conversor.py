@@ -1,6 +1,3 @@
-
-
-
 menu = """ 
 Welcome to this Money Converter
 
@@ -13,13 +10,13 @@ Choose one option
 
 def converter(money,dolar):
 
-    peso = float(input(f'How many {money} have you?: '))
+    coin = float(input(f'How many {money} have you?: '))
     if money == 'Dollars':
-        result=dolar*peso
+        result=dolar*coin
         result=str(result)
         print (f'You have {result} Colombian Pesos')
     else:
-        result=peso/dolar
+        result=coin/dolar
         result=round(result,2)
         print (f'You have {result} Dollars')
 
@@ -33,40 +30,4 @@ else:
 
 if '__name__'=='__main__':
     converter()
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-# def run():
     
-#     def conversor():
-#         out = (coin * dolarprice
-#         return out
-
-        
-        
-        
-
-    
-
-#     if '__name__' == '__main__':
-#         run()
-
-    
-    
-
