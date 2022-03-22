@@ -38,7 +38,7 @@ elif option ==5:
 elif option ==6:
     converter('ARS', 20.37)
 else:
-    print('Escribe una opción correcta')
+    print('Write a correct answer')
 
 if '__name__'=='__main__':
     converter()
