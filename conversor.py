@@ -1,42 +1,54 @@
-menu = """ 
-Welcome to this Money Converter
+var1 = {
+    "COP":1,
+    "USD":2,
+    "ARS":3,
+    "CLP":4
+}
 
-Choose one option
+var2 = {
+    "USD":1,
+    "COP":2,
+    "ARS":3,
+    "CLP":4
+}
 
-1. USD to COP
-2. COP to USD
-3. USD to MXN
-4. MXN to USD
-5. CLP to USD
-6. USD to CLP
+def converter(money,money2,dolar,dolar2):
 
-"""
-
-def converter(money,dolar):
-
-    coin = float(input(f'How many money have you?: '))
-    if option % 2 !=0:
-        result=coin*dolar
-        result=str(round(result,2))
-        print (f'You have {result} {money}')
-    else:
+    
+    if option1 ==1 and option2==1 or option1==3 and option2 ==1 or option1==4 and option2==1:
+        coin = float(input(f'How many {money} have you?: '))
         result=coin/dolar
         result=str(round(result,2))
-        print (f'You have {result} Dollars')
+        print(f'You have {result} {money2}')
+    elif option1==1 and option2==3 or option1==1 and option2==4 or option1==3 and option2==1 or option1==3 and option2==4 or option1==4 and option1==1 or option2==4 and option2==3 or option1==3 and option2==2:
+        coin= float(input(f'How many {money} you have?'))
+        result=coin/dolar*dolar2
+        result=str(round(result,2))
+        print(f'You have {result} {money2}')
+    else:
+        coin = float(input(f'How many Dollars have you?: '))
+        result=coin*dolar
+        result=str(round(result,2))
+        print(f'you have {result} {money}')
+    
+    
 
-option =int(input(menu))
-if option ==1:
-    converter('Colombian pesos',3815)
-elif option ==2:
-    converter('Colombian pesos',3815)
-elif option ==3:
-    converter('Mexican pesos', 20.37)
-elif option ==4:
-    converter('Mexican pesos', 20.37)
-elif option ==5:
-    converter('ARS', 20.37)
-elif option ==6:
-    converter('ARS', 20.37)
+   
+
+
+option1 =int(input(f'{var1} choose an option: '))
+option2 =int(input(f'{var2} choose an option: '))
+if option1 ==1 and option2 ==1 or option1==2 and option2==2:
+    converter('Colombian Peso','Dollars',3815)
+elif option1 ==3 and option2 ==1 :
+    converter('Argentine Peso','Dollars', 110.17)
+elif option1 ==4 and option2 ==1 or option1==2 and option2==4: 
+    converter('Chilean Peso','Dollars', 796.88)
+elif option1==1 and option2==3 or option1==3 and option2==2:
+    converter('Colombian peso','Argentine Peso',3815,110.17)
+elif option1==1 and option2==4 or option1==4 and option2==2:
+    converter('Colombian Peso','Chilean Peso',3815,796.88)
+
 else:
     print('Write a correct answer')
 
