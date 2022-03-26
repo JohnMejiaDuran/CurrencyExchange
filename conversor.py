@@ -41,9 +41,6 @@ def converter(money,money2,dolar,dolar2):
     
     
 
-   
-
-
 option1 =int(input(f'{var1} choose an option: '))
 option2 =int(input(f'{var2} choose an option: '))
 
